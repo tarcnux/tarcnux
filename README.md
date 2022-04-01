@@ -1,6 +1,7 @@
 ### Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 🔭 I'm currently working on back-end projects, Oracle database and looking to improve myself on the front-end as well.
+
 🌱 I’m currently learning ReactJS, Typescript and Spring Boot
 
 <a href="https://www.instagram.com/tarcnux/">
