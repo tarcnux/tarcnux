@@ -38,11 +38,6 @@
 ![Notepad++](https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2B%2B&logoColor=black)&nbsp;
 ![Sublime](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important)&nbsp;
 
-### GitHub Analytics:
-<p align="left">
-  <img height="145em" src="https://github-readme-stats.vercel.app/api?username=tarcnux&title_color=00BFFF&icon_color=fff&text_color=5ce1e6&bg_color=1f004e&border_color=whitec&show_icons=true"/>
-  <img height="145em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=tarcnux&layout=compact&title_color=00BFFF&icon_color=fff4&text_color=5ce1e6&bg_color=1f004e&show_icons=true"/>
-</p>
 
   
 ### Tarcnux on social media:  
