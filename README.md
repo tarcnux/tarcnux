@@ -45,10 +45,10 @@
   <img align="left" alt="Tarcnux's Instagram" width="22px" src="https://raw.githubusercontent.com/hussainweb/hussainweb/main/icons/instagram.png" />
 </a>
 <a href="https://twitter.com/tarcnux">
-  <img align="left" alt="Tarcnux | Twitter" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
+  <img align="left" alt="Tarcnux | Twitter" width="22px" src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/Twitter.svg" />
 </a>
 <a href="https://www.linkedin.com/in/tarcnux/">
-  <img align="left" alt="Tarcnux's LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
+  <img align="left" alt="Tarcnux's LinkedIN" width="22px" src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/LinkedIN.svg" />
 </a>
 <br />
 
