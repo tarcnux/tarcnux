@@ -5,7 +5,12 @@
 
 🔭 I'm currently working on back-end projects, Oracle database and looking to improve myself on the front-end as well.
 
-🌱 I’m currently learning ![React.js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB), ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white), ![Spring Boot](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) and ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
+🌱 I’m currently learning 
+![Node.js](https://img.shields.io/badge/nodejs-green?logo=javascript&logoColor=f5f5f5&style=for-the-badge)
+![React.js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB),
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) and
+![Azure Cloud](https://img.shields.io/badge/Azure%20Cloud-00bfff?style=for-the-badge&logo=Azure&logoColor=white)&nbsp;
+.
 
 ### 🚀 Main skills:
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
@@ -38,7 +43,19 @@
 ![Notepad++](https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2B%2B&logoColor=black)&nbsp;
 ![Sublime](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important)&nbsp;
 
-
+### Languages
+<a href="https://github.com/buenodeandrade/lang-badges">
+    <img src="https://raw.githubusercontent.com/buenodeandrade/lang-badges/main/badges/BR.svg" alt="Português">
+</a>
+<a href="https://github.com/buenodeandrade/lang-badges">
+    <img src="https://raw.githubusercontent.com/buenodeandrade/lang-badges/main/badges/GB.svg" alt="English">
+</a>
+<a href="https://github.com/buenodeandrade/lang-badges">
+    <img src="https://raw.githubusercontent.com/buenodeandrade/lang-badges/main/badges/ES.svg" alt="Español">
+</a>
+<a href="https://github.com/buenodeandrade/lang-badges">
+    <img src="https://raw.githubusercontent.com/buenodeandrade/lang-badges/main/badges/DE.svg" alt="Deutsch">
+</a>
   
 ### Tarcnux on social media:  
 <a href="https://www.instagram.com/tarcnux/">
@@ -50,7 +67,13 @@
 <a href="https://www.linkedin.com/in/tarcnux/">
   <img align="left" alt="Tarcnux's LinkedIN" width="22px" src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/LinkedIN.svg" />
 </a>
+[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/tarcnux)
 <br />
+
+### GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tarcnux&theme=transparent&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=tarcnux&layout=compact&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
 
 
 <!--
