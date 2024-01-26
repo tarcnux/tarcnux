@@ -12,6 +12,8 @@
 ![Azure Cloud](https://img.shields.io/badge/Azure%20Cloud-00bfff?style=for-the-badge&logo=Azure&logoColor=white)&nbsp;
 .
 
+[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/tarcnux)
+
 ### 🚀 Main skills:
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;
@@ -67,8 +69,8 @@
 <a href="https://www.linkedin.com/in/tarcnux/">
   <img align="left" alt="Tarcnux's LinkedIN" width="22px" src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/LinkedIN.svg" />
 </a>
-[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/tarcnux)
 <br />
+
 
 ### GitHub Stats
 
