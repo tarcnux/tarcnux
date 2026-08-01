@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarcnux — Frases de Helena Blavatsky</title>
+  <style>
+    :root { --bg:#0f1724; --card:#0b1220; --accent:#9be7ff; --text:#e6eef8; }
+    html,body { height:100%; margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071028 0%, #07183a 100%); color:var(--text); }
+    .wrap { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem; box-sizing:border-box; }
+    .card { background:rgba(255,255,255,0.03); padding:2.25rem; border-radius:12px; max-width:900px; box-shadow:0 8px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03); }
+    blockquote { margin:0; font-size:1.6rem; line-height:1.4; font-weight:500; }
+    footer { margin-top:1rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; color: #c9d8e6; font-size:0.9rem; opacity:0.85; }
+    .meta { display:flex; gap:.5rem; align-items:center; }
+    button { background:transparent; border:1px solid rgba(255,255,255,0.08); color:var(--text); padding:.5rem .75rem; border-radius:8px; cursor:pointer; }
+    .fade { animation:fadeIn .5s ease; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+    .author { font-weight:700; color:var(--accent); }
+    .small { font-size:0.94rem; opacity:0.9; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main" aria-live="polite">
+      <blockquote id="quote" class="fade">Carregando...</blockquote>
+      <footer>
+        <div class="meta small">— <span class="author">Helena P. Blavatsky</span></div>
+        <div style="margin-left:auto;display:flex;gap:.5rem">
+          <button id="new">Nova Frase (sem repetir)</button>
+          <button id="rand">Random</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Lista de 100 frases atribuídas a Helena P. Blavatsky (public domain).
+    const QUOTES = [
+      "Não há religião superior à verdade.",
+"A Teosofia não é uma religião, mas uma filosofia e uma ciência.",
+"Sede luzes para vós mesmos.",
+"A verdade pode ser expressa de mil maneiras diferentes, e ainda assim cada uma pode ser verdadeira.",
+"Todo homem e toda mulher é uma estrela.",
+"O universo é consciente e a consciência é a raiz de todas as coisas.",
+"O ocultismo não é um credo, mas um método.",
+"Somos moldados pelos nossos pensamentos; tornamo-nos aquilo que pensamos.",
+"Nenhuma lei pode ser estabelecida sem exceção.",
+"O homem de coração puro que busca o conhecimento encontrará orientação.",
+"A coragem é a escada pela qual todas as outras virtudes ascendem.",
+"A mente é a grande destruidora do real.",
+"A sabedoria é filha da experiência.",
+"Não há nada sutil no universo além da mente; a matéria é apenas a sua sombra.",
+"A alma não morre ao deixar o corpo, mas inicia uma nova fase da vida.",
+"Não venha a mim em busca de doutrinas, mas da verdade.",
+"A natureza é o livro sempre aberto do mundo espiritual.",
+"Quanto mais iluminado for um homem, mais humilde ele será.",
+"A todo homem é dada a chave para os portões do céu; a mesma chave abre os portões do inferno.",
+"Tudo o que vemos, sentimos e vivenciamos é apenas um reflexo do mundo interior.",
+"A Teosofia é a síntese da ciência, da religião e da filosofia.",
+"Ninguém pode ser verdadeiramente livre se não for senhor de si mesmo.",
+"O homem é um rio cuja nascente está oculta.",
+"A verdade não concede os seus dons onde e quando quer, mas apenas àqueles que estão prontos.",
+"O reconhecimento da unidade de toda a vida é o primeiro passo para a sabedoria.",
+"Não existem acasos, apenas causas.",
+"O mal é a ignorância; o conhecimento é o único remédio real.",
+"O ocultista deve ser um místico em sua própria vida antes de poder ensinar.",
+"Todo pensamento e ação vibra através do universo.",
+"O espírito é ilimitado e não pode ser confinado a formas.",
+"O progresso é a lei da vida; a estagnação, a lei da morte.",
+"O passado é apenas uma memória; o futuro, uma" ideia; o presente é a única realidade.",
+"O autodomínio é a mais verdadeira devoção.",
+"Nenhuma vitória é maior do que a vitória sobre si mesmo.",
+"A luz interior é o único guia real.",
+"O sábio não busca ser conhecido, mas sim conhecer.",
+"A compaixão é a força mais poderosa do universo.",
+"O caminho para a verdade é o caminho do conhecimento e do amor unidos.",
+"Religião sem razão é superstição; razão sem religião é materialismo.",
+"Não busque o aplauso dos homens, mas a aprovação da sua consciência.",
+"Tudo na natureza é dual e complementar.",
+"O maior erro é supor que a forma física seja o homem por inteiro.",
+"Somente pela autopurificação o espírito pode se desabrochar.",
+"Para compreender o universo, devemos compreender a nós mesmos.",
+"Cada alma é responsável pela sua própria evolução.",
+"O misticismo sem ética não tem sentido.",
+"A consciência superior revela-se através do sofrimento e do serviço.",
+"O silêncio é a primeira condição para o conhecimento.",
+"Ninguém pode ajudá-lo além de você mesmo; ninguém pode e ninguém deve.",
+"Se quiser contemplar a alma de uma nação, não olhe apenas para as suas leis, mas para o seu povo.",
+"A mente se expande na medida em que o coração se abre.",
+"A lei do karma é a lei da causalidade moral.",
+"A felicidade é o resultado de uma vida correta e da verdade.",
+"A vida espiritual começa no momento em que renunciamos à ilusão.",
+"Todo peregrino deve carregar a sua própria cruz.",
+"Os ensinamentos não têm utilidade a menos que mudem as nossas vidas.",
+"A verdadeira sabedoria não provém de palavras, mas da vivência.",
+"A fé sem conhecimento é cega; o conhecimento sem fé é estéril.",
+"A perseverança é a ponte entre o esforço e a realização.",
+"O esforço constante para ser melhor é a verdadeira adoração da vida.",
+"O mestre apenas aponta o caminho; o discípulo deve percorrê-lo.",
+"Tudo o que é grandioso começa no interior.",
+"Não confunda conhecimento com sabedoria; um é aquisição, o outro é realização.",
+"Uma lei superior rege todas as leis humanas.",
+"A verdade deve ser buscada no interior, não nas opiniões conflitantes dos outros.",
+"Quanto mais se sabe, mais humilde se torna.",
+"Os laços do hábito são, muitas vezes, os mais pesados." grilhões.",
+"Aja sempre de acordo com a luz interior, não com os aplausos externos.",
+"Não há conquista maior do que estar livre do desejo.",
+"Servir é o aluguel que pagamos por viver neste planeta.",
+"Cada pensamento de amor cria uma onda no oceano do ser.",
+"O aspirante espiritual deve praticar a paciência e a ternura.",
+"Todas as grandes mudanças são precedidas por uma voz interior, suave e silenciosa.",
+"O conhecimento que não transforma não é verdadeiro conhecimento.",
+"As coisas ocultas só podem ser conhecidas por aqueles que as vivenciam.",
+"Conquistar a raiva é algo maior
+    ];
+
+    // Utilities to show quotes without repeats for the same visitor (localStorage)
+    const QUOTES_KEY = 'tarcnux_seen_quotes_v1';
+
+    function getSeenSet() {
+      try {
+        const raw = localStorage.getItem(QUOTES_KEY);
+        return raw ? new Set(JSON.parse(raw)) : new Set();
+      } catch (e) {
+        return new Set();
+      }
+    }
+    function saveSeenSet(set) {
+      try { localStorage.setItem(QUOTES_KEY, JSON.stringify(Array.from(set))); } catch(e){}
+    }
+
+    function pickNextNoRepeat() {
+      const seen = getSeenSet();
+      if (seen.size >= QUOTES.length) {
+        // reset when all seen
+        seen.clear();
+      }
+      const remaining = [];
+      for (let i=0;i<QUOTES.length;i++) if (!seen.has(i)) remaining.push(i);
+      const idx = remaining[Math.floor(Math.random()*remaining.length)];
+      seen.add(idx);
+      saveSeenSet(seen);
+      return QUOTES[idx];
+    }
+
+    function pickRandom() {
+      return QUOTES[Math.floor(Math.random()*QUOTES.length)];
+    }
+
+    function display(text) {
+      const el = document.getElementById('quote');
+      el.classList.remove('fade');
+      void el.offsetWidth;
+      el.textContent = text;
+      el.classList.add('fade');
+    }
+
+    document.getElementById('new').addEventListener('click', ()=> display(pickNextNoRepeat()));
+    document.getElementById('rand').addEventListener('click', ()=> display(pickRandom()));
+
+    // On load: show next no-repeat (so each visit shows a new one)
+    document.addEventListener('DOMContentLoaded', ()=> {
+      display(pickNextNoRepeat());
+    });
+  </script>
+</body>
+</html>
